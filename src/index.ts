@@ -1,6 +1,6 @@
-import type { RspressPlugin } from '@rspress/shared';
+import { type RspressPlugin, normalizePosixPath } from '@rspress/shared';
 import path from 'node:path';
-
+import { fileURLToPath } from 'node:url';
 interface LazyLoadOptions {
   /**
    * 距离视口距离
@@ -13,6 +13,9 @@ interface LazyLoadOptions {
 }
 
 export function pluginLazyLoad(options: LazyLoadOptions = {}): RspressPlugin {
+  const __dirname = normalizePosixPath(
+    path.dirname(fileURLToPath(import.meta.url)),
+  );
   return {
     name: 'rspress-plugin-lazy-load',
     globalUIComponents: [

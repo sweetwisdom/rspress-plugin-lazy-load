@@ -1,6 +1,6 @@
 {
   "name": "rspress-plugin-lazy-load",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A plugin for rspress to preview the code block in markdown/mdx file.",
   "bugs": "https://github.com/sweetwisdom/rspress-plugin-lazy-load/issues",
   "repository": {
@@ -28,9 +28,7 @@
     "build": "rslib build",
     "dev": "rslib build -w"
   },
-  "dependencies": {
-    "medium-zoom": "1.1.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@rslib/core": "~0.6.9",
     "@types/node": "^18.11.17",
