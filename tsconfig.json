@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig-rs.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "composite": true,
+    "baseUrl": "src",
+    "rootDir": "src"
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
